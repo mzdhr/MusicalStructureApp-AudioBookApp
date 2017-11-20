@@ -21,7 +21,7 @@
         android:maxLines="1"
         android:text="Invisible"
         android:textStyle="bold"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:gravity="start"
         android:ellipsize="end"
         />
@@ -32,7 +32,7 @@
         android:maxLines="1"
         android:text="James Patterson"
         android:textStyle="bold"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:gravity="start"
         android:ellipsize="end"
         />
@@ -43,7 +43,7 @@
         android:maxLines="1"
         android:text="2016"
         android:textStyle="bold"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:gravity="start"
         android:ellipsize="end"
         />
