@@ -42,7 +42,7 @@ public class PlayerActivity extends AppCompatActivity {
             mBookDuration = "90:41";
             mBookCoverID = R.drawable.invisible;
         } else {
-            // play this book
+            // play this clicked book
             mBookTitle = intent.getStringExtra(Constants.BOOK_TITLE);
             mBookDuration = intent.getStringExtra(Constants.BOOK_DURATION);
             mBookCoverID = intent.getIntExtra(Constants.BOOK_COVER, 0);
@@ -53,7 +53,7 @@ public class PlayerActivity extends AppCompatActivity {
         mDurationTextView.setText(mBookDuration);
         mBookCoverImageView.setImageResource(mBookCoverID);
 
-        // Setting click listener to library button
+        // Setting click listener to "Library" button
         mLibraryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
