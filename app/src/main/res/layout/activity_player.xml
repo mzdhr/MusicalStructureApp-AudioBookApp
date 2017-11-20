@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mzdhr.musicalstructureapp_audiobook.PlayerActivity"
+    android:background="@color/activity_background_color">
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/title_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Now Playing:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="@color/top_into_layout_color"
+        />
+
+    <ImageView
+        android:layout_below="@+id/title_note"
+        android:id="@+id/book_cover_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/invisible"
+        android:scaleType="centerCrop"
+        android:layout_above="@+id/control_layout"/>
+
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/top_into_layout_color">
+        <Button
+            android:id="@+id/library_button_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Library"
+            style="@style/button_style_submit"
+            />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_above="@+id/button_layout"
+        android:id="@+id/control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/info_layout"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_exposure_plus_2_black_24px"
+                android:text="00:00"
+                android:maxLines="1"
+                />
+
+            <TextView
+                android:id="@+id/book_title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="Invisible"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_timer_black_24px"
+                android:text="40:55"
+                android:maxLines="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/info_layout"
+            android:id="@+id/seekbar_layout"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/start_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:maxLines="1"
+                />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_weight="1"
+
+                />
+            <TextView
+                android:id="@+id/duration_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40:55"
+                android:maxLines="1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/seekbar_layout"
+            android:padding="8dp"
+            android:id="@+id/buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="3"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fast_rewind_black_24px"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_play_arrow_black_24px"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fast_forward_black_24px"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/information_layout"
+        android:layout_below="@id/title_note"
+        android:layout_above="@id/control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mzdhr.musicalstructureapp_audiobook.MainActivity"
+    android:background="@color/activity_background_color">
+
+   <TextView
+       android:visibility="visible"
+       android:id="@+id/title_note"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:text="AudioBook Library:"
+       android:textStyle="bold"
+       android:textSize="16sp"
+       android:padding="8dp"
+       android:background="@color/top_into_layout_color"
+       />
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/top_into_layout_color">
+    <Button
+        android:id="@+id/now_playing_button_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Now Playing"
+
+        style="@style/button_style_submit"
+        />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/list"
+        android:layout_below="@id/title_note"
+        android:layout_above="@id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        >
+    </GridView>
+
+
+</RelativeLayout>

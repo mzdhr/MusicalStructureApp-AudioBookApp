@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="top_into_layout_color">#E0E0E0</color>
+    <color name="activity_background_color">#F5F4F4</color>
+
+
+
+    <color name="white">#F5F4F4</color>
+
+    <color name="button_color">#4C4B49</color>
+
+</resources>
