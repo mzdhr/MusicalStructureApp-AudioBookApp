@@ -1,5 +1,5 @@
 # AudioBook Player App - Musical Structure
-Android App to play Audiobooks. Udacity Project number 04 for Android Basic NanoDegree.
+Android app to play Audiobooks. Udacity Project number 04 for Android Basic NanoDegree.
 
 ## Built With
 * UI Design, GridView, ArrayAdapter.
